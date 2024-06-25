@@ -11,4 +11,7 @@
         代码：https://github.com/zacjiang/GMA
         简介：GMA基于raft提出改进,在解码器中引入了全局运动特征global motion feature,此特征是由上下文特征提供的qk计算特征图attn，和运动特征提供的v做注意力计算得到的。
 
-3.
+3.flow1D:High-Resolution Optical Flow from 1D Attention and Correlation(ICCV 2021)
+        论文：https://arxiv.org/abs/2104.13918
+        代码：https://github.com/haofeixu/flow1d
+        简介：flow1D基于raft把4D成本量分成水平，垂直两个方向的3D成本量做光流回归，提升了运行速度
