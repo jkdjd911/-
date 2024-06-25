@@ -1,4 +1,4 @@
-  光流估计（Optional flow）：主要研究方向是密集光流估计，计算相关图之间点对点的光流估计，得到一张二维向量光流图。
+  光流估计（Optional flow）：主要研究方向是密集光流估计，计算相关图之间点对点的光流估计，得到一张二维向量光流图。现在深度学习方向主要有raft，gmflow，flowformer等模型。
 
 
 1.raft：RAFT: Recurrent All-Pairs Field Transforms for Optical Flow（ECCV 2020）
@@ -9,4 +9,6 @@
 2.GMA：Learning to Estimate Hidden Motions with Global Motion Aggregation（CVPR 2021）
         论文：https://arxiv.org/abs/2104.02409
         代码：https://github.com/zacjiang/GMA
-        简介：GMA基于raft
+        简介：GMA基于raft提出改进,在解码器中引入了全局运动特征global motion feature,此特征是由上下文特征提供的qk计算特征图attn，和运动特征提供的v做注意力计算得到的。
+
+3.
