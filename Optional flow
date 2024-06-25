@@ -1,4 +1,4 @@
-  光流估计（Optional flow）：主要研究方向是密集光流估计，计算相关图之间点对点的光流估计，得到一张二维向量光流图。现在深度学习方向主要有raft，gmflow，flowformer等模型。
+  光流估计（Optional flow）：主要研究方向是密集光流估计,计算相关图之间点对点的光流估计,得到一张二维向量光流图.现在深度学习方向主要有raft，gmflow，flowformer等模型.
 
 
 1.raft：RAFT: Recurrent All-Pairs Field Transforms for Optical Flow（ECCV 2020）
@@ -9,9 +9,14 @@
 2.GMA：Learning to Estimate Hidden Motions with Global Motion Aggregation（CVPR 2021）
         论文：https://arxiv.org/abs/2104.02409
         代码：https://github.com/zacjiang/GMA
-        简介：GMA基于raft提出改进,在解码器中引入了全局运动特征global motion feature,此特征是由上下文特征提供的qk计算特征图attn，和运动特征提供的v做注意力计算得到的。
+        简介：GMA基于raft提出改进,在解码器中引入了全局运动特征global motion feature,此特征是由上下文特征提供的qk计算特征图attn，和运动特征提供的v做注意力计算得到的.
 
-3.flow1D:High-Resolution Optical Flow from 1D Attention and Correlation(ICCV 2021)
+3.flow1D：High-Resolution Optical Flow from 1D Attention and Correlation(ICCV 2021)
         论文：https://arxiv.org/abs/2104.13918
         代码：https://github.com/haofeixu/flow1d
-        简介：flow1D基于raft把4D成本量分成水平，垂直两个方向的3D成本量做光流回归，提升了运行速度
+        简介：flow1D基于raft把4D成本量分成水平，垂直两个方向的3D成本量做光流回归，提升了运行速度.
+
+4.Separable Flow：Separable Flow: Learning Motion Cost Volumes for Optical Flow Estimation(ICCV 2021)
+        论文：https://openaccess.thecvf.com/content/ICCV2021/papers/Zhang_Separable_Flow_Learning_Motion_Cost_Volumes_for_Optical_Flow_Estimation_ICCV_2021_paper.pdf
+        代码：https://github.com/feihuzhang/SeparableFlow
+        简介：Separable Flow提出可分离成本量取代原本的4D成本量.
