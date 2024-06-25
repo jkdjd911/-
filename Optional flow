@@ -1,7 +1,12 @@
-  光流估计（Optional flow）：
+  光流估计（Optional flow）：主要研究方向是密集光流估计，计算相关图之间点对点的光流估计，得到一张二维向量光流图。
 
 
 1.raft：RAFT: Recurrent All-Pairs Field Transforms for Optical Flow（ECCV 2020）
         论文:https://arxiv.org/pdf/2003.12039.pdf              
         代码:https://github.com/princeton-vl/RAFT
         简介:raftf是2020年以来光流估计深度学习卷积方向的基准,raft网络架构包括三个方面：（1）编码器feature encoder（2）相关性计算4D correlation volume(3)解码器updater decoder.
+
+2.GMA：Learning to Estimate Hidden Motions with Global Motion Aggregation（CVPR 2021）
+        论文：https://arxiv.org/abs/2104.02409
+        代码：https://github.com/zacjiang/GMA
+        简介：GMA基于raft
